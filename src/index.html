@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+  <main id="pageContent">
+
+    <!-- Holds the title screen -->
+    <section id="titleScreen">
+      <div class="sectionContainer">
+        <img src="<%=require('./images/splash_edit.png')%>" alt="" class="splashScreen">
+        <h1 class="gameTitle">Rock, Paper, Scissors</h1>
+        <div class="controls">
+          <button class="_control-button" id="gameStartButton">Start Game</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- holds the game screen -->
+    <section id="gameScreen">
+      <div class="sectionContainer">
+
+        <button class="_control-button" id="quitGameButton">Quit</button>
+        <div class="scoreboard">
+          <p class="round-counter">
+            Round: <span id="current-round">0</span>
+          </p>
+          <div class="score-stats">
+            <div class="stat player_1-stat">
+              <div class="title">P_1</div>
+              <div class="count">0</div>
+            </div>
+            <div class="stat ties-stat">
+              <div class="title">Draws</div>
+              <div class="count">0</div>
+            </div>
+            <div class="stat player_2-stat">
+              <div class="title">P_2</div>
+              <div class="count">0</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- will show the hands playing -->
+        <div class="display">
+          <div class="player player_1">
+            <h2 class="title">Player</h2>
+            <div class="hand"></div>
+          </div>
+          <div class="player player_2">
+            <h2 class="title">Computer</h2>
+            <div class="hand"></div>
+          </div>
+        </div>
+
+        <!-- controls - hold the hands to be played -->
+        <div class="controls">
+          <button class="hand rock" value="rock">rock</button>
+          <button class="hand paper" value="paper">paper</button>
+          <button class="hand scissors" value="scissors">scissors</button>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>

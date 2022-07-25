@@ -1,0 +1,39 @@
+{
+  "name": "rps",
+  "version": "1.0.0",
+  "description": "Rock paper scissors javascript game",
+  "main": "app.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "devBuild": "webpack --config webpack.dev.js",
+    "devServer": "webpack server --config webpack.dev.js --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KDeeM/JS_RockPaperScissors.git"
+  },
+  "keywords": [
+    "Game"
+  ],
+  "author": "Alexander Kadeem",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KDeeM/JS_RockPaperScissors/issues"
+  },
+  "homepage": "https://github.com/KDeeM/JS_RockPaperScissors#readme",
+  "dependencies": {
+    "animejs": "^3.2.1",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "sass": "^1.53.0",
+    "sass-loader": "^13.0.2",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.3",
+    "webpack-remove-empty-scripts": "^0.8.1"
+  }
+}
